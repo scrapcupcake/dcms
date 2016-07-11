@@ -1,0 +1,220 @@
+.Container{
+    margin: 0px;
+    font-family: "Cabin";
+    background-color: #809361;
+}
+@media screen and (min-width:700px){
+  .Container{
+    background-image: url(assets/images/BGSplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.Header{
+    display: -webkit-flex;
+    display: flex;
+    height:26vh;
+    margin: 0px;
+    background-image: url(assets/images/Logo.png);
+    background-repeat: no-repeat;
+    background-size: auto 23vh;
+    background-position: 8vw 1.5vh ;
+}
+
+h1{
+  font-size: 4vh;
+  margin: 5px;
+  text-align: left;
+}
+h2{
+  font-size:3.5vh;
+  margin: 5px;
+  text-align: left;
+}
+h3{
+  font-size: 3vh;
+  margin: 0px;
+  text-align: left;
+}
+h4{
+  font-size: 2.5vh;
+  margin: 0px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.Title { 
+  box-sizing: border-box;
+  position: relative;
+  margin: 0px;
+  top: 4vh;
+  left: 20vw;
+  padding: 0px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-shadow: 0px 0px 7px rgba(51, 51, 51, 0.58),0px 3px 0px rgba(51, 51, 51, 0.51);
+}
+.Title h1{
+  font-size: 4vw;
+  text-align: left;
+  margin:0px;
+}
+.Title h2{
+  margin: 0px;
+  text-align: right;
+}
+
+.FBLink{
+  position: absolute;
+  right: 1.5vw;
+  top: 15vh;
+}
+.FBLink img{
+  height: 5vh;
+}
+
+
+.Nav {
+  position: absolute;
+  top: 22vh;
+  right: 1.5vw;
+  height: 5vh;
+  width: 65vw;
+  box-sizing: border-box;
+  z-index: 1;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(51, 51, 51);
+  background-color: rgb(152, 176, 111);
+  box-shadow: 0px 0px 7px rgba(51, 51, 51, 0.58),0px 3px 0px rgba(51, 51, 51, 0.51);
+  color: rgb(255, 255, 255);
+  font-size:2.5vh;
+}
+@media screen and (orientation : portrait){
+  .Nav{
+    font-size: 3vw;
+  }
+  h1{
+    font-size:4vw;
+  }
+  h2{
+    font-size: 3.5vw;
+  }
+  h3{
+    font-size: 3vw;
+  }
+  h4{
+    font-size: 2.5vw;
+  }
+  .Title h1{
+    font-size: 7vw;
+  }
+}
+.Nav a{
+  color: rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+  padding: 4px 10px;
+}
+.Nav a:hover {
+    background-color: #b6dc76;
+}
+
+.Main{
+  position: absolute;
+  left: 0px;
+  min-height: 74vh;
+  width: 100%;
+  z-index: 100;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 1vh 20vw;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(51, 51, 51);
+  border-radius: 15vw 0px 0px 0px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 7px rgba(51, 51, 51, 0.58),0px 3px 0px rgba(51, 51, 51, 0.51);
+  background-size: auto 70vh;
+  background-image: url(assets/images/LogoBig.png);
+  background-repeat: no-repeat;
+  background-position: 5vw 2.5vh;
+  text-align: justify;
+  color: black;
+}
+
+.TwoColumn{
+  -webkit-columns: 2 400px;
+     -moz-columns: 2 400px;
+          columns: 2 400px;
+  -webkit-column-gap: 2em;
+     -moz-column-gap: 2em;
+          column-gap: 2em;
+  padding: 0px;
+}
+.Profile{
+  display: block;
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+.Profile img{
+  float: left;
+  margin-right: 10px;
+}
+.Profile h3{
+  margin: 0px;
+}
+
+.FlexRow{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
+  list-style-position: inside;
+}
+
+li{
+  padding: 0px;
+  margin: 5px;
+  text-align: left;
+}
+
+.Input{
+  border-width: 2px;
+  border-color: rgb(51, 51, 51);
+  border-style: solid;
+  background-color: rgb(248, 251, 241);
+  box-shadow: inset 2px 2px 0px 0px rgba(51, 51, 51, 0.25);
+  width: 100%;
+  margin: 5px 0px 10px 10px;
+  padding: 5px;
+  min-height: 35px;
+}
+
+input[type=submit]{
+  min-width: 165px;
+  margin:10px;
+  padding: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(51, 51, 51);
+  background-color: rgb(152, 176, 111);
+  box-shadow: 0px 0px 4px 0px rgba(51, 51, 51, 0.004),0px 3px 0px 0px rgba(51, 51, 51, 0.51);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size:2.5vh;
+}
