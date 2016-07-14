@@ -31,8 +31,9 @@ export function bootstrap(ngApp:any, localDeps:any[], routes: RouterConfig){
         provideRouter(routes),
         NODE_LOCATION_PROVIDERS
         ],
-        async: true,
-        preboot: false // { appRoot: 'app' } // your top level app component selector
+        async: false,
+        preboot: false, // { appRoot: 'app' } // your top level app component selector
+        
      };
      return config;
     }

@@ -5,7 +5,7 @@ import { Http } from '@angular/http';
 /////////////////////////
 // ** MAIN APP COMPONENT **
 @Component({
-  selector: 'body', // <app></app>
+  selector: 'app', // <app></app>
   directives: [
     ...ROUTER_DIRECTIVES
    ],
@@ -14,17 +14,5 @@ import { Http } from '@angular/http';
   `
 })
 export class App {
-  data = {};
-  
-  constructor(public http: Http) { }
-
-  ngOnInit() {
-  
-    // use services for http calls
-    this.http.get('/data.json')
-      .subscribe(res => {
-        this.data = res.json();
-      });
-  }
 
 }

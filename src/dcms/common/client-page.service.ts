@@ -25,6 +25,4 @@ export class PageStore{
         });
         return pageobv$;
     }
-
-
 }

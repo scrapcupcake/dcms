@@ -1,10 +1,12 @@
-.Container{
+
+body{
     margin: 0px;
+    padding: 0px;
     font-family: "Cabin";
     background-color: #809361;
 }
 @media screen and (min-width:700px){
-  .Container{
+  body{
     background-image: url(assets/images/BGSplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;

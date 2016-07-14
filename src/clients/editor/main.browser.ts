@@ -4,7 +4,7 @@ import 'angular2-universal/polyfills';
 
 // Angular 2
 import {enableProdMode} from '@angular/core';
-enableProdMode();
+//enableProdMode();
 
 // Angular 2 Universal
 import { bootstrap } from '../bootstrap.web';

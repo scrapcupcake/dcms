@@ -13,7 +13,7 @@ import { enableProdMode } from '@angular/core';
 import { expressEngine } from 'angular2-universal';
 
 // enable prod for faster renders
-enableProdMode();
+//enableProdMode();
 
 const app = express();
 const ROOT = path.join(path.resolve(__dirname, '..'));
@@ -39,8 +39,8 @@ import frontEnd from '../clients/frontEnd/main.node';
 import editor from '../clients/editor/main.node';
 // Routes with html5pushstate
 // ensure routes match client-side-app
-app.get('/editor*', editor());
-app.get('/*', frontEnd());
+app.get('/editor*', editor);
+app.get('/*', frontEnd);
 
 app.get('*', function(req, res) {
   res.setHeader('Content-Type', 'application/json');

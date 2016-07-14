@@ -6,5 +6,5 @@ import {prebootComplete} from 'angular2-universal';
 export function bootstrap(ngApp:any, localDeps:any[], routes: RouterConfig){
    var strap = webBootstrap(ngApp, [...HTTP_PROVIDERS, provideRouter(routes),...localDeps]);
    strap.then(prebootComplete);
-   return strap;    
+   return strap;
 }

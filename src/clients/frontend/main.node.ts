@@ -15,4 +15,4 @@ function makeMiddleWare(){
   return middleware.bind(config);
 }
 
-export default makeMiddleWare;
+export default makeMiddleWare();
